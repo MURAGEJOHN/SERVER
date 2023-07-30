@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg.jpg');
+            background-size: cover;
+            
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 60px auto;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"],
+        input[type="id no"] {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            background-color: #564caf;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form action="submit_registration.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+           <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" maxlength="20" required>
+           </div>
+           <div>
+            <label for="ID NO">ID NO:</label>
+            <input type="id no" id="id no" name="id no" maxlength="10" required>
+           </div>
+          
+        <h3>Personal detail</h3>
+
+            <label>GENDER:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            
+            <label for="Age">AGE:</label>
+            <input type="range" id="age" name="age" min="18" max="100" step="1" value="18" required>
+
+            <br>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="canada">Canada</option>
+            <option value="kenya">Kenya</option>
+            <option value="Germany">Germany</option>
+            </select>
+            <br>
+        <h4>AREA OF LOCATION</h4>
+            <input type="radio" id="nakuru" name="area of location" value="nakuru">
+            <label for="option1">Nakuru</label>
+            <input type="radio" id="nairobi" name="area of location" value="nairobi">
+            <label for="option2">Nairobi</label>
+            <input type="radio" id="mombasa" name="area of location" value="mombasa"> 
+            <label for="option3">Mombasa</label>
+            <div>
+                <input type="submit" value="Register">
+            </div>
+            
+        </form>
+    </div>
+
+    
+</body>
+
+</html>
