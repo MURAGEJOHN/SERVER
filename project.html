@@ -46,16 +46,27 @@
             margin-right: 5px;
         }
 
-        input[type="submit"] {
-            display: block;
-            width: 100%;
-            padding: 20px;
-            background-color: #564caf;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        .logout button::before {
+            background-color: #1f2335;
+             border: radius 5px;
+             content:''';
+             display: block;
+             height: 100%;
+             left: 0;
+             position: absolute;
+             top: 0;
+             transform: none;
+             transition: transform 50ms ease ;
+             width: 100%;
+             z-index: 2;
         }
+        .logout button:hover .door {
+            transform: rotate(20deg);
+
+        }
+        .logout button:active::before {
+            transform: scale(.98);
+        {
     </style>
 </head>
 
